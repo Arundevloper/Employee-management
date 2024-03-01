@@ -1,0 +1,16 @@
+.navbar-custom {
+    background-color: #2980b9; /* Navbar background color */
+}
+.navbar-custom .navbar-brand {
+    color: #ffffff; /* Navbar brand color */
+}
+.navbar-custom .navbar-nav .nav-link {
+    color: #ffffff; /* Navbar link color */
+}
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #f8c471; /* Navbar link hover color */
+}
+.outer{
+    display: flex;
+    justify-content: space-between;
+}

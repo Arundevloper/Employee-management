@@ -2,7 +2,7 @@ const express=require('express');
 const app=express();
 const ejs=require('ejs');
 const path = require('path');
-const registerRoute=require('./routes/registerRoute');
+const Routes=require('./routes/Routes');
 const connectDb=require('./config/dbConnect');
 
 app.use(express.static('public'));
@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 
-app.use('/register',registerRoute);
+app.use('',Routes);
 
 const PORT = process.env.PORT || 3000;
 connectDb('employee');
