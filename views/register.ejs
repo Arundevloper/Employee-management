@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Registration</title>
+<link rel="stylesheet" href="register.css">
+
+</head>
+<body>
+<div class="container">
+    <h2>Employee Registration</h2>
+    <form action="/register" method="post" enctype="application/x-www-form-urlencoded">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+
+
+        <label for="department">Department:</label><br>
+        <select id="department" name="department" required>
+            <option value="">Select Department</option>
+            <option value="IT">IT</option>
+            <option value="HR">HR</option>
+            <option value="Finance">Finance</option>
+            <option value="Marketing">Marketing</option>
+        </select><br>
+
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label><br>
+
+
+        <label for="courses">Courses:</label><br>
+        <input type="checkbox" id="course1" name="courses[]" value="English">
+        <label for="English">English</label><br>
+        <input type="checkbox" id="course2" name="courses[]" value="Maths">
+        <label for="Maths">Maths</label><br>
+        <input type="checkbox" id="course3" name="courses[]" value="Hindi">
+        <label for="Hindi">Hindi</label><br>
+        
+         <label for="profileImage">Upload Avatar:</label><br>
+        <input type="file" id="profileImage" name="profileImage"><br>
+  
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
