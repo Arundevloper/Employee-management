@@ -2,11 +2,11 @@ const { EmployeeModel } = require('../models/register.model');
 const ImageModel = require('../models/image.model'); // Import the ImageModel schema
 
 async function register(req, res) {
-    const { name, email, password, department, gender, courses,profileImage } = req.body;
+    const { name, email, password, department, gender, courses } = req.body;
 
     try {
         // Handle image upload
-        const imageFile = req.file; // Assuming you use multer for file upload middleware
+        const imageFile = req.file; // Access the uploaded image file using req.file
         if (!imageFile) {
             return res.status(400).json({ error: 'No image uploaded' });
         }

@@ -4,8 +4,6 @@ const ejs=require('ejs');
 const path = require('path');
 const registerRoute=require('./routes/registerRoute');
 const connectDb=require('./config/dbConnect');
-const multer = require('multer'); 
-const upload = multer({ dest: 'uploads/' }); 
 
 app.use(express.static('public'));
 app.set('view engine','ejs');
